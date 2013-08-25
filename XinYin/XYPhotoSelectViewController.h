@@ -14,4 +14,6 @@
 @property (nonatomic, retain) PSUICollectionView *_gridView;
 
 @property (nonatomic, retain) NSMutableArray *images;
+
+@property (nonatomic, retain) NSMutableArray *selectedImages;
 @end

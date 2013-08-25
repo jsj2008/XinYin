@@ -9,16 +9,23 @@
 #import <Foundation/Foundation.h>
 
 #define kBackButtonTitle @"返回"
+#define kNextButtonTitle @"下一步"
 
 #define kPhotoSizeViewController @"photoSizeVC"
 #define kPhotoSizeViewInfoController @"photoSizeInfoVC"
 #define kAlbumsViewController @"AlbumsVC"
 #define kPhotoSelectViewController @"photoSelectVC"
+#define kPhotoReviewViewController @"photoReviewVC"
+
 
 
 @interface XYConfig : NSObject
 
-+ (XYConfig *)sharedInstance ;
+// save the user selected images
+@property (nonatomic) int sizeInfoIndex ;
 
+@property (nonatomic, retain) NSMutableArray *selectedImages;
+
++ (XYConfig *)sharedInstance ;
 
 @end

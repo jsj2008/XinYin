@@ -8,6 +8,7 @@
 
 #import "XYPhotoSelectViewController.h"
 #import "XYPhotoGridCell.h"
+#import "XYPhotosReviewViewController.h"
 
 
 CGSize CollectionViewCellSize = { .height = 106, .width = 106 };
@@ -21,6 +22,7 @@ NSString *CollectionViewCellIdentifier = @"cellId";
 
 @synthesize _gridView;
 @synthesize images;
+@synthesize selectedImages;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +41,11 @@ NSString *CollectionViewCellIdentifier = @"cellId";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:kBackButtonTitle style:UIBarButtonItemStylePlain target:self action:@selector(dismiss)];
     self.navigationItem.leftBarButtonItem = backButton;
     
+    UIBarButtonItem *confirmButton = [[UIBarButtonItem alloc] initWithTitle:kNextButtonTitle style:UIBarButtonItemStylePlain target:self action:@selector(gotoPhotoReviewViewController)];
+    self.navigationItem.rightBarButtonItem = confirmButton;
+    
+    
+    selectedImages = [[NSMutableArray alloc] init];
     [self createGridView];
 }
 
@@ -50,6 +57,24 @@ NSString *CollectionViewCellIdentifier = @"cellId";
 
 -(void)dismiss {
     [self.flipboardNavigationController popViewController];
+}
+
+-(void) gotoNext {
+    //
+}
+
+#pragma mark- Goto Review
+
+-(void) gotoPhotoReviewViewController{
+    if (selectedImages.count < 1) {
+        return;
+    }
+    
+    XYPhotosReviewViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:kPhotoReviewViewController];
+    vc.images = selectedImages;
+    vc.sizeInfoIndex = 0;
+    XYNavigationController *nv = [[XYNavigationController alloc] initWithRootViewController:vc];
+    [self.flipboardNavigationController pushViewController:nv];
 }
 
 #pragma mark- Grid View
@@ -104,39 +129,49 @@ NSString *CollectionViewCellIdentifier = @"cellId";
 
 - (void)collectionView:(PSTCollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %d : HIGHLIGHTED", [self formatIndexPath:indexPath]);
+   // NSLog(@"Delegate cell %d : HIGHLIGHTED", [self formatIndexPath:indexPath]);
 }
 
 - (void)collectionView:(PSTCollectionView *)collectionView didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %d : UNHIGHLIGHTED", [self formatIndexPath:indexPath]);
+    //NSLog(@"Delegate cell %d : UNHIGHLIGHTED", [self formatIndexPath:indexPath]);
 }
 
 - (void)collectionView:(PSTCollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %d : SELECTED", [self formatIndexPath:indexPath]);
+    //NSLog(@"Delegate cell %d : SELECTED", [self formatIndexPath:indexPath]);
+    ALAsset *image = [images objectAtIndex:[self formatIndexPath:indexPath]];
+    
+    NSLog(@"select: %@", image);
+    
+    [selectedImages addObject:image];
+    NSLog(@"%@", selectedImages);
 }
 
 - (void)collectionView:(PSTCollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %d : DESELECTED", [self formatIndexPath:indexPath]);
+    //NSLog(@"Delegate cell %d : DESELECTED", [self formatIndexPath:indexPath]);
+    ALAsset *image = [images objectAtIndex:[self formatIndexPath:indexPath]];
+    NSLog(@"deselect: %@", image);
+    [selectedImages removeObject:image];
+    NSLog(@"%@", selectedImages);
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Check delegate: should cell %d highlight?", [self formatIndexPath:indexPath]);
+    //NSLog(@"Check delegate: should cell %d highlight?", [self formatIndexPath:indexPath]);
     return YES;
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Check delegate: should cell %d be selected?", [self formatIndexPath:indexPath]);
+   // NSLog(@"Check delegate: should cell %d be selected?", [self formatIndexPath:indexPath]);
     return YES;
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Check delegate: should cell %d be deselected?", [self formatIndexPath:indexPath]);
+    //NSLog(@"Check delegate: should cell %d be deselected?", [self formatIndexPath:indexPath]);
     return YES;
 }
 

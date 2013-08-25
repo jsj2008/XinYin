@@ -59,6 +59,8 @@
             NSMutableArray *imgs = [[NSMutableArray alloc] init];
             [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
                 if (result) {
+                    
+                    
                     [imgs addObject:result];
                 }else{
                     NSDictionary *dict = @{@"group": [group valueForProperty:@"ALAssetsGroupPropertyName"], @"images":imgs};

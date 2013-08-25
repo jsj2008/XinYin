@@ -27,6 +27,8 @@
 		F1F5247D17C9F49600ABCA94 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F5247C17C9F49600ABCA94 /* AssetsLibrary.framework */; };
 		F1F5248417CA041400ABCA94 /* XYPhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5248317CA041400ABCA94 /* XYPhotoSelectViewController.m */; };
 		F1F5248717CA04B300ABCA94 /* XYPhotoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5248617CA04B300ABCA94 /* XYPhotoGridCell.m */; };
+		F1F5248A17CA5A3D00ABCA94 /* XYPhotosReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5248917CA5A3D00ABCA94 /* XYPhotosReviewViewController.m */; };
+		F1F5248D17CA5CF300ABCA94 /* XYPhotoReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5248C17CA5CF200ABCA94 /* XYPhotoReviewCell.m */; };
 		FCEB02C98DDE420489D4EA7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1941795A32A499186CC7A81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,10 @@
 		F1F5248317CA041400ABCA94 /* XYPhotoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoSelectViewController.m; sourceTree = "<group>"; };
 		F1F5248517CA04B200ABCA94 /* XYPhotoGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoGridCell.h; sourceTree = "<group>"; };
 		F1F5248617CA04B300ABCA94 /* XYPhotoGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoGridCell.m; sourceTree = "<group>"; };
+		F1F5248817CA5A3C00ABCA94 /* XYPhotosReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotosReviewViewController.h; sourceTree = "<group>"; };
+		F1F5248917CA5A3D00ABCA94 /* XYPhotosReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotosReviewViewController.m; sourceTree = "<group>"; };
+		F1F5248B17CA5CF200ABCA94 /* XYPhotoReviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoReviewCell.h; sourceTree = "<group>"; };
+		F1F5248C17CA5CF200ABCA94 /* XYPhotoReviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoReviewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,10 @@
 				F1F5248317CA041400ABCA94 /* XYPhotoSelectViewController.m */,
 				F1F5248517CA04B200ABCA94 /* XYPhotoGridCell.h */,
 				F1F5248617CA04B300ABCA94 /* XYPhotoGridCell.m */,
+				F1F5248817CA5A3C00ABCA94 /* XYPhotosReviewViewController.h */,
+				F1F5248917CA5A3D00ABCA94 /* XYPhotosReviewViewController.m */,
+				F1F5248B17CA5CF200ABCA94 /* XYPhotoReviewCell.h */,
+				F1F5248C17CA5CF200ABCA94 /* XYPhotoReviewCell.m */,
 				F192F93E17C9097400AAE031 /* XYViewController.h */,
 				F192F93F17C9097400AAE031 /* XYViewController.m */,
 				F192F92A17C9097400AAE031 /* Supporting Files */,
@@ -272,6 +282,8 @@
 				F1F5247B17C9F22300ABCA94 /* XYAlbumsViewController.m in Sources */,
 				F1F5248417CA041400ABCA94 /* XYPhotoSelectViewController.m in Sources */,
 				F1F5248717CA04B300ABCA94 /* XYPhotoGridCell.m in Sources */,
+				F1F5248A17CA5A3D00ABCA94 /* XYPhotosReviewViewController.m in Sources */,
+				F1F5248D17CA5CF300ABCA94 /* XYPhotoReviewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

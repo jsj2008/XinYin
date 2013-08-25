@@ -21,4 +21,7 @@
     return sharedInstance;
 }
 
+@synthesize sizeInfoIndex;
+@synthesize selectedImages;
+
 @end

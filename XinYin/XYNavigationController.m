@@ -27,13 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    /*
-    self.view.layer.masksToBounds = NO;
-    //self.layer.cornerRadius = 8; // if you like rounded corners
-    self.view.layer.shadowOffset = CGSizeMake(-2, 0);
-    self.view.layer.shadowRadius = 3;
-    self.view.layer.shadowOpacity = 1.0;
-     */
 }
 
 - (void)didReceiveMemoryWarning
