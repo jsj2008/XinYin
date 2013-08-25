@@ -13,4 +13,11 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#import <FlipBoardNavigationController.h>
+#import <AVOSCloud/AVOSCloud.h>
+#import <SwipeView.h>
+#import "XYConfig.h"
+#import "XYNavigationController.h"
+#import <PSTCollectionView/PSTCollectionView.h>
+
 

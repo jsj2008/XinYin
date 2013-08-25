@@ -4,15 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AVOSCloud.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-AVOSCloudUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-FlipBoardNavigationController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Pods-JSONKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Pods-PSTCollectionView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>Pods-SwipeView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
@@ -32,7 +57,82 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>218F966E7FF54093838FE34F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4883A58AB36A41E9859D3C68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71DC8FE032634F48B0001E1A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>760A47BDD804444EB0A215A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>772C5E6AF50147139107D75E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>871B7561D98D40EF9A72578F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>880D462899C9485282548E39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A87738A4D3C4BDFA9E2B2AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A52F17FD44F54EB7B9343E5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE9562D848534D21890EFDA6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C304AE75B2474495BEB9BAD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9E12FA00F7B4872B5D63EE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D1D5B77799FB4BF38469B819</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8164C3FF8D24D8FAD5777ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D86D80D73AF64E299050D289</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE41C9B619384CF8ACCFABB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

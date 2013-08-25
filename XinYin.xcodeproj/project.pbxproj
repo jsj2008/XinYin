@@ -18,6 +18,15 @@
 		F192F93A17C9097400AAE031 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F192F93917C9097400AAE031 /* Default-568h@2x.png */; };
 		F192F93D17C9097400AAE031 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F192F93B17C9097400AAE031 /* MainStoryboard.storyboard */; };
 		F192F94017C9097400AAE031 /* XYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F192F93F17C9097400AAE031 /* XYViewController.m */; };
+		F1F5246C17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5246B17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.m */; };
+		F1F5246F17C9DCA300ABCA94 /* XYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5246E17C9DCA300ABCA94 /* XYNavigationController.m */; };
+		F1F5247217C9E43C00ABCA94 /* XYPhotoSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5247117C9E43B00ABCA94 /* XYPhotoSizeCell.m */; };
+		F1F5247517C9E68700ABCA94 /* XYPhotoSizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5247417C9E68700ABCA94 /* XYPhotoSizeInfoViewController.m */; };
+		F1F5247817C9EA4700ABCA94 /* XYConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5247717C9EA4700ABCA94 /* XYConfig.m */; };
+		F1F5247B17C9F22300ABCA94 /* XYAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5247A17C9F22300ABCA94 /* XYAlbumsViewController.m */; };
+		F1F5247D17C9F49600ABCA94 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F5247C17C9F49600ABCA94 /* AssetsLibrary.framework */; };
+		F1F5248417CA041400ABCA94 /* XYPhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5248317CA041400ABCA94 /* XYPhotoSelectViewController.m */; };
+		F1F5248717CA04B300ABCA94 /* XYPhotoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5248617CA04B300ABCA94 /* XYPhotoGridCell.m */; };
 		FCEB02C98DDE420489D4EA7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1941795A32A499186CC7A81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +49,24 @@
 		F192F93C17C9097400AAE031 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F192F93E17C9097400AAE031 /* XYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYViewController.h; sourceTree = "<group>"; };
 		F192F93F17C9097400AAE031 /* XYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYViewController.m; sourceTree = "<group>"; };
+		F1F5246A17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoSizeSelectViewController.h; sourceTree = "<group>"; };
+		F1F5246B17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoSizeSelectViewController.m; sourceTree = "<group>"; };
+		F1F5246D17C9DCA300ABCA94 /* XYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNavigationController.h; sourceTree = "<group>"; };
+		F1F5246E17C9DCA300ABCA94 /* XYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNavigationController.m; sourceTree = "<group>"; };
+		F1F5247017C9E43B00ABCA94 /* XYPhotoSizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoSizeCell.h; sourceTree = "<group>"; };
+		F1F5247117C9E43B00ABCA94 /* XYPhotoSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoSizeCell.m; sourceTree = "<group>"; };
+		F1F5247317C9E68700ABCA94 /* XYPhotoSizeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoSizeInfoViewController.h; sourceTree = "<group>"; };
+		F1F5247417C9E68700ABCA94 /* XYPhotoSizeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoSizeInfoViewController.m; sourceTree = "<group>"; };
+		F1F5247617C9EA4700ABCA94 /* XYConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConfig.h; sourceTree = "<group>"; };
+		F1F5247717C9EA4700ABCA94 /* XYConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYConfig.m; sourceTree = "<group>"; };
+		F1F5247917C9F22300ABCA94 /* XYAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAlbumsViewController.h; sourceTree = "<group>"; };
+		F1F5247A17C9F22300ABCA94 /* XYAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAlbumsViewController.m; sourceTree = "<group>"; };
+		F1F5247C17C9F49600ABCA94 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F1F5248017C9F92A00ABCA94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F1F5248217CA041400ABCA94 /* XYPhotoSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoSelectViewController.h; sourceTree = "<group>"; };
+		F1F5248317CA041400ABCA94 /* XYPhotoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoSelectViewController.m; sourceTree = "<group>"; };
+		F1F5248517CA04B200ABCA94 /* XYPhotoGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPhotoGridCell.h; sourceTree = "<group>"; };
+		F1F5248617CA04B300ABCA94 /* XYPhotoGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPhotoGridCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F5247D17C9F49600ABCA94 /* AssetsLibrary.framework in Frameworks */,
 				F192F92417C9097400AAE031 /* UIKit.framework in Frameworks */,
 				F192F92617C9097400AAE031 /* Foundation.framework in Frameworks */,
 				F192F92817C9097400AAE031 /* CoreGraphics.framework in Frameworks */,
@@ -60,6 +88,7 @@
 		F192F91717C9097400AAE031 = {
 			isa = PBXGroup;
 			children = (
+				F1F5248017C9F92A00ABCA94 /* Security.framework */,
 				F192F92917C9097400AAE031 /* XinYin */,
 				F192F92217C9097400AAE031 /* Frameworks */,
 				F192F92117C9097400AAE031 /* Products */,
@@ -78,6 +107,7 @@
 		F192F92217C9097400AAE031 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1F5247C17C9F49600ABCA94 /* AssetsLibrary.framework */,
 				F192F92317C9097400AAE031 /* UIKit.framework */,
 				F192F92517C9097400AAE031 /* Foundation.framework */,
 				F192F92717C9097400AAE031 /* CoreGraphics.framework */,
@@ -89,9 +119,25 @@
 		F192F92917C9097400AAE031 /* XinYin */ = {
 			isa = PBXGroup;
 			children = (
+				F1F5247617C9EA4700ABCA94 /* XYConfig.h */,
+				F1F5247717C9EA4700ABCA94 /* XYConfig.m */,
 				F192F93217C9097400AAE031 /* XYAppDelegate.h */,
 				F192F93317C9097400AAE031 /* XYAppDelegate.m */,
 				F192F93B17C9097400AAE031 /* MainStoryboard.storyboard */,
+				F1F5246D17C9DCA300ABCA94 /* XYNavigationController.h */,
+				F1F5246E17C9DCA300ABCA94 /* XYNavigationController.m */,
+				F1F5246A17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.h */,
+				F1F5246B17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.m */,
+				F1F5247017C9E43B00ABCA94 /* XYPhotoSizeCell.h */,
+				F1F5247117C9E43B00ABCA94 /* XYPhotoSizeCell.m */,
+				F1F5247317C9E68700ABCA94 /* XYPhotoSizeInfoViewController.h */,
+				F1F5247417C9E68700ABCA94 /* XYPhotoSizeInfoViewController.m */,
+				F1F5247917C9F22300ABCA94 /* XYAlbumsViewController.h */,
+				F1F5247A17C9F22300ABCA94 /* XYAlbumsViewController.m */,
+				F1F5248217CA041400ABCA94 /* XYPhotoSelectViewController.h */,
+				F1F5248317CA041400ABCA94 /* XYPhotoSelectViewController.m */,
+				F1F5248517CA04B200ABCA94 /* XYPhotoGridCell.h */,
+				F1F5248617CA04B300ABCA94 /* XYPhotoGridCell.m */,
 				F192F93E17C9097400AAE031 /* XYViewController.h */,
 				F192F93F17C9097400AAE031 /* XYViewController.m */,
 				F192F92A17C9097400AAE031 /* Supporting Files */,
@@ -218,6 +264,14 @@
 				F192F93017C9097400AAE031 /* main.m in Sources */,
 				F192F93417C9097400AAE031 /* XYAppDelegate.m in Sources */,
 				F192F94017C9097400AAE031 /* XYViewController.m in Sources */,
+				F1F5246C17C9DC1300ABCA94 /* XYPhotoSizeSelectViewController.m in Sources */,
+				F1F5246F17C9DCA300ABCA94 /* XYNavigationController.m in Sources */,
+				F1F5247217C9E43C00ABCA94 /* XYPhotoSizeCell.m in Sources */,
+				F1F5247517C9E68700ABCA94 /* XYPhotoSizeInfoViewController.m in Sources */,
+				F1F5247817C9EA4700ABCA94 /* XYConfig.m in Sources */,
+				F1F5247B17C9F22300ABCA94 /* XYAlbumsViewController.m in Sources */,
+				F1F5248417CA041400ABCA94 /* XYPhotoSelectViewController.m in Sources */,
+				F1F5248717CA04B300ABCA94 /* XYPhotoGridCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +363,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A66DBFB2F77549A09491AC54 /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/AVOSCloud/iOS/release-v1.3.2/\"",
+					"\"$(PODS_ROOT)/AVOSCloudUI/iOS/release-v1.3.2/\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XinYin/XinYin-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AVOSCloud\"",
+					"\"${PODS_ROOT}/Headers/AVOSCloudUI\"",
+					"\"${PODS_ROOT}/Headers/FlipBoardNavigationController\"",
+				);
 				INFOPLIST_FILE = "XinYin/XinYin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -322,11 +389,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A66DBFB2F77549A09491AC54 /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/AVOSCloud/iOS/release-v1.3.2/\"",
+					"\"$(PODS_ROOT)/AVOSCloudUI/iOS/release-v1.3.2/\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XinYin/XinYin-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AVOSCloud\"",
+					"\"${PODS_ROOT}/Headers/AVOSCloudUI\"",
+					"\"${PODS_ROOT}/Headers/FlipBoardNavigationController\"",
+				);
 				INFOPLIST_FILE = "XinYin/XinYin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

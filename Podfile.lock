@@ -1,13 +1,22 @@
 PODS:
-  - JSONKit (1.5pre)
-  - Reachability (3.0.0)
+  - AVOSCloud (1.3.2)
+  - AVOSCloudUI (1.3.2)
+  - FlipBoardNavigationController (1.0)
+  - PSTCollectionView (1.1.0)
+  - SwipeView (1.2.10)
 
 DEPENDENCIES:
-  - JSONKit (~> 1.4)
-  - Reachability (~> 3.0.0)
+  - AVOSCloud (~> 1.3.2)
+  - AVOSCloudUI (~> 1.3.2)
+  - FlipBoardNavigationController (~> 1.0)
+  - PSTCollectionView (~> 1.1.0)
+  - SwipeView (~> 1.2.10)
 
 SPEC CHECKSUMS:
-  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
-  Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
+  AVOSCloud: c91e01689cf313ef29e562154978df04ad3df3b1
+  AVOSCloudUI: 898e6ed4d57b3891ba89a3e06c9003d083c59913
+  FlipBoardNavigationController: e26bd79192242a2dc402f9acd736ecc4c9f4dd08
+  PSTCollectionView: af42b0fb111200a1b87a04aee96181725977f19b
+  SwipeView: 0218f1fe1a271a610279815101b808a054fe631a
 
 COCOAPODS: 0.23.0

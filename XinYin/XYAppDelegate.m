@@ -8,11 +8,19 @@
 
 #import "XYAppDelegate.h"
 
+
+
 @implementation XYAppDelegate
+@synthesize flipView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    flipView = [[FlipBoardNavigationController alloc] initWithRootViewController:self.window.rootViewController];
+    
+    self.window.rootViewController = flipView;
+    
     return YES;
 }
 							

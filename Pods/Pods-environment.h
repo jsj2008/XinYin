@@ -6,16 +6,33 @@
 // project.
 
 
-// JSONKit
-#define COCOAPODS_POD_AVAILABLE_JSONKit
-// This library does not follow semantic-versioning,
-// so we were not able to define version macros.
-// Please contact the author.
-// Version: 1.5pre.
+// AVOSCloud
+#define COCOAPODS_POD_AVAILABLE_AVOSCloud
+#define COCOAPODS_VERSION_MAJOR_AVOSCloud 1
+#define COCOAPODS_VERSION_MINOR_AVOSCloud 3
+#define COCOAPODS_VERSION_PATCH_AVOSCloud 2
 
-// Reachability
-#define COCOAPODS_POD_AVAILABLE_Reachability
-#define COCOAPODS_VERSION_MAJOR_Reachability 3
-#define COCOAPODS_VERSION_MINOR_Reachability 0
-#define COCOAPODS_VERSION_PATCH_Reachability 0
+// AVOSCloudUI
+#define COCOAPODS_POD_AVAILABLE_AVOSCloudUI
+#define COCOAPODS_VERSION_MAJOR_AVOSCloudUI 1
+#define COCOAPODS_VERSION_MINOR_AVOSCloudUI 3
+#define COCOAPODS_VERSION_PATCH_AVOSCloudUI 2
+
+// FlipBoardNavigationController
+#define COCOAPODS_POD_AVAILABLE_FlipBoardNavigationController
+#define COCOAPODS_VERSION_MAJOR_FlipBoardNavigationController 1
+#define COCOAPODS_VERSION_MINOR_FlipBoardNavigationController 0
+#define COCOAPODS_VERSION_PATCH_FlipBoardNavigationController 0
+
+// PSTCollectionView
+#define COCOAPODS_POD_AVAILABLE_PSTCollectionView
+#define COCOAPODS_VERSION_MAJOR_PSTCollectionView 1
+#define COCOAPODS_VERSION_MINOR_PSTCollectionView 1
+#define COCOAPODS_VERSION_PATCH_PSTCollectionView 0
+
+// SwipeView
+#define COCOAPODS_POD_AVAILABLE_SwipeView
+#define COCOAPODS_VERSION_MAJOR_SwipeView 1
+#define COCOAPODS_VERSION_MINOR_SwipeView 2
+#define COCOAPODS_VERSION_PATCH_SwipeView 10
 

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Reachability.h"
 
 
 @interface XYViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet UIButton *infoButton ;
+@property (nonatomic, strong) IBOutlet UIButton *selectButton ;
 
 @end
