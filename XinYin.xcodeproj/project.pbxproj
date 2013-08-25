@@ -18,9 +18,12 @@
 		F192F93A17C9097400AAE031 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F192F93917C9097400AAE031 /* Default-568h@2x.png */; };
 		F192F93D17C9097400AAE031 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F192F93B17C9097400AAE031 /* MainStoryboard.storyboard */; };
 		F192F94017C9097400AAE031 /* XYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F192F93F17C9097400AAE031 /* XYViewController.m */; };
+		FCEB02C98DDE420489D4EA7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1941795A32A499186CC7A81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A66DBFB2F77549A09491AC54 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B1941795A32A499186CC7A81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F192F92017C9097400AAE031 /* XinYin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XinYin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F192F92317C9097400AAE031 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F192F92517C9097400AAE031 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +50,7 @@
 				F192F92417C9097400AAE031 /* UIKit.framework in Frameworks */,
 				F192F92617C9097400AAE031 /* Foundation.framework in Frameworks */,
 				F192F92817C9097400AAE031 /* CoreGraphics.framework in Frameworks */,
+				FCEB02C98DDE420489D4EA7B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				F192F92917C9097400AAE031 /* XinYin */,
 				F192F92217C9097400AAE031 /* Frameworks */,
 				F192F92117C9097400AAE031 /* Products */,
+				A66DBFB2F77549A09491AC54 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,7 @@
 				F192F92317C9097400AAE031 /* UIKit.framework */,
 				F192F92517C9097400AAE031 /* Foundation.framework */,
 				F192F92717C9097400AAE031 /* CoreGraphics.framework */,
+				B1941795A32A499186CC7A81 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F192F94317C9097400AAE031 /* Build configuration list for PBXNativeTarget "XinYin" */;
 			buildPhases = (
+				963C9FA4B9E44D038BA2DAE8 /* Check Pods Manifest.lock */,
 				F192F91C17C9097400AAE031 /* Sources */,
 				F192F91D17C9097400AAE031 /* Frameworks */,
 				F192F91E17C9097400AAE031 /* Resources */,
+				903006D1AD46442D81817FFB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +176,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		903006D1AD46442D81817FFB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		963C9FA4B9E44D038BA2DAE8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F192F91C17C9097400AAE031 /* Sources */ = {
@@ -227,9 +268,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ${SRCROOT} ${SRCROOT}/Pods";
 			};
 			name = Debug;
 		};
@@ -251,19 +295,24 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ${SRCROOT} ${SRCROOT}/Pods";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F192F94417C9097400AAE031 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66DBFB2F77549A09491AC54 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XinYin/XinYin-Prefix.pch";
 				INFOPLIST_FILE = "XinYin/XinYin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,10 +320,12 @@
 		};
 		F192F94517C9097400AAE031 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66DBFB2F77549A09491AC54 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XinYin/XinYin-Prefix.pch";
 				INFOPLIST_FILE = "XinYin/XinYin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +350,7 @@
 				F192F94517C9097400AAE031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
