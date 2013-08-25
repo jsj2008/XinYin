@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong) IBOutlet UIButton *infoButton ;
 @property (nonatomic, strong) IBOutlet UIButton *selectButton ;
+@property (nonatomic, strong) IBOutlet UIButton *loginButton ;
 
 @end

@@ -9,6 +9,7 @@
 #import "XYViewController.h"
 #import "XYNavigationController.h"
 #import "XYPhotoSizeSelectViewController.h"
+#import "AVLogInViewController.h"
 
 @interface XYViewController ()
 
@@ -18,6 +19,7 @@
 
 @synthesize infoButton;
 @synthesize selectButton;
+@synthesize loginButton;
 
 - (void)viewDidLoad
 {
@@ -25,6 +27,20 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [selectButton addTarget:self action:@selector(gotoSelectViewController) forControlEvents:UIControlEventTouchUpInside];
     [infoButton addTarget:self action:@selector(gotoInfoViewController) forControlEvents:UIControlEventTouchUpInside];
+    [loginButton addTarget:self action:@selector(gotoSignUp) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void) gotoLogin {
+    NSLog(@"gogo login");
+    AVLogInViewController *vc = [[AVLogInViewController alloc] init];
+    vc.delegate = self;
+    [self presentModalViewController:vc animated:YES];
+}
+
+-(void) gotoSignUp {
+    AVSignUpViewController *vc = [[AVSignUpViewController alloc] init];
+    vc.delegate = self;
+    [self presentModalViewController:vc animated:YES];
 }
 
 -(void) gotoInfoViewController {
